@@ -39,3 +39,8 @@ jobs:
         run: mkdir assets && ls ./ChatGPT-Next-Web/.vercel/output/ && mv ./ChatGPT-Next-Web/.vercel/output/web.zip ./assets/ && ls ./assets
       - name: Build APK
         run: flutter build apk --release
+      - name: Upload apk
+        uses: actions/upload-artifact@v3
+        with:
+          name: release
+          path: build/app/outputs/flutter-apk/app-release.apk
