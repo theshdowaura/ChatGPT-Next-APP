@@ -8,7 +8,9 @@
 ### 安装
 * **android**
 
-    下载apk：https://github.com/jmgaooo/ChatGPT-Next-APP/releases
+    下载apk：请从本项目 Action 下载最新的 Release
+
+    对于新版本，请任意提交一个 Issue 即可出发 Workflow 编译流程
 * **ios**
 
     需自己构建安装（ios环境未测试）
