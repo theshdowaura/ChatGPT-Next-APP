@@ -36,6 +36,6 @@ jobs:
         working-directory: ./ChatGPT-Next-Web/.vercel/output
         run: mv static web && zip -q -r web.zip ./web/
       - name: Move Zip File
-        run: ls ./ChatGPT-Next-Web/.vercel/output/ && mv ./ChatGPT-Next-Web/.vercel/output/web.zip ./assets/ && ls ./assets
+        run: mkdir assets && ls ./ChatGPT-Next-Web/.vercel/output/ && mv ./ChatGPT-Next-Web/.vercel/output/web.zip ./assets/ && ls ./assets
       - name: Build APK
         run: flutter build apk --release
