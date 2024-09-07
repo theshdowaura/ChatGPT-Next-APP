@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Checkout submodules
-        run: git submodule update --init --recursive
+        run: git clone https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web.git
       - name: Setup NodeJs
         uses: actions/setup-node@v4
         with:
