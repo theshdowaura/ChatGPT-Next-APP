@@ -1,4 +1,0 @@
-[submodule "ChatGPT-Next-Web"]
-	path = ChatGPT-Next-Web
-	url = https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web.git
-	branch = main
