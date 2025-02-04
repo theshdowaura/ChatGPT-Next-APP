@@ -38,7 +38,7 @@ jobs:
       - name: Build APK
         run: flutter build apk --release
       - name: Upload apk
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # 使用 v4 版本
         with:
           name: release
           path: build/app/outputs/flutter-apk/app-release.apk
